@@ -27,10 +27,10 @@
     navBar.translucent = false;
     [self.view addSubview:navBar];
     
-    navItems = [[UINavigationItem alloc] initWithTitle:@"center"];
-//    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(MenuAction:)];
-//    [leftItem setTintColor:[UIColor whiteColor]];
-//    navItems.leftBarButtonItem = leftItem;
+    navItems = [[UINavigationItem alloc] initWithTitle:@"xxxxx"];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(MenuAction:)];
+    [leftItem setTintColor:[UIColor whiteColor]];
+    navItems.leftBarButtonItem = leftItem;
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"A" style:UIBarButtonItemStylePlain target:self action:@selector(AddAction:)];
     [rightItem setTintColor:[UIColor whiteColor]];
     rightItemDel = [[UIBarButtonItem alloc] initWithTitle:@"D" style:UIBarButtonItemStylePlain target:self action:@selector(DeleteAction:)];
