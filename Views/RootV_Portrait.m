@@ -7,7 +7,9 @@
 //
 
 #import "RootV_Portrait.h"
+#import "KScrollViewController.h"
 
+const float kScrollViewHeight = 300.0;
 @interface RootV_Portrait ()
 
 @end
@@ -16,6 +18,10 @@
     UINavigationBar *navBar;
     UINavigationItem *navItems;
     UIBarButtonItem *rightItemDel;
+    KScrollViewController *kScrollVC;
+    
+    NSMutableArray<UIView*> *viewArr;
+    NSArray *imagesData;
 }
 
 - (void)viewDidLoad {
@@ -37,8 +43,37 @@
     [rightItemDel setTintColor:[UIColor whiteColor]];
     navItems.rightBarButtonItems = @[rightItemDel,rightItem];
     [navBar pushNavigationItem:navItems animated:YES];
+    
+    [self _loadData];
+    [self _setUpViews];
 }
-
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    kScrollVC.view.frame = CGRectMake(0, 70, self.view.frame.size.width, kScrollViewHeight);
+}
+- (void)_loadData{
+    imagesData = @[@"image1.jpg", @"image2.jpg", @"image3.jpg", @"image4.jpg", @"image5.jpg", @"image6.jpg"];
+    viewArr = [NSMutableArray array];
+    [imagesData enumerateObjectsUsingBlock:^(NSString *imageName, NSUInteger idx, BOOL *stop) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, kScrollViewHeight)];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.image = [UIImage imageNamed:imageName];
+        imageView.clipsToBounds = YES;
+        [viewArr addObject:imageView];
+    }];
+}
+- (void)_setUpViews{
+    kScrollVC = [[KScrollViewController alloc] initWithContainerFrame:CGRectMake(0, 70, self.view.frame.size.width, kScrollViewHeight)];
+    kScrollVC.dotSize = CGSizeMake(12, 12);
+    kScrollVC.containerViewArr = viewArr;
+    [self addChildViewController:kScrollVC];
+    [self.view addSubview:kScrollVC.view];
+    [kScrollVC didMoveToParentViewController:self];
+    
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
