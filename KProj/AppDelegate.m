@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "RootVC.h"
 
 @interface AppDelegate ()
 
@@ -25,15 +24,12 @@
     UIMutableApplicationShortcutItem *secondItem = [[UIMutableApplicationShortcutItem alloc]initWithType:@"second" localizedTitle:@"play it" localizedSubtitle:nil icon:secondItemIcon userInfo:nil];
     application.shortcutItems = @[firstItem,secondItem];
     
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-#pragma clang diagnostic pop
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    RootVC *rootVC = [[RootVC alloc] init];
-    self.window.rootViewController = rootVC;
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    RootVC *rootVC = [[RootVC alloc] initWithNibName:@"RootVC" bundle:[NSBundle mainBundle]];
+//    self.window.rootViewController = rootVC;
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

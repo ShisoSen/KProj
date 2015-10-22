@@ -1,12 +1,13 @@
 //
-//  KScrollViewController.m
+//  KKScrolView.m
 //  KProj
 //
-//  Created by Sicong Qian on 15/10/21.
+//  Created by Sicong Qian on 15/10/22.
 //  Copyright © 2015年 silverup.co. All rights reserved.
 //
 
-#import "KScrollViewController.h"
+#import "KScrolView.h"
+
 @implementation KAbstractDotView
 - (id)init{
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
@@ -78,48 +79,46 @@ static CGFloat const kAnimateDuration = 1;
 @end
 
 const float kDotViewSpacing = 8;
-@interface KScrollViewController ()<UIScrollViewDelegate>
+@interface KScrolView ()<UIScrollViewDelegate>
 
 @end
-
-@implementation KScrollViewController{
+@implementation KScrolView{
     NSMutableArray<KAbstractDotView*> *dotArr;
     NSInteger currentPageIndex;
 }
-@synthesize scrollView,containerViewArr,frame,dotViewClass,dotViews,dotSize;
-- (instancetype)initWithContainerFrame:(CGRect)frame_{
-    self = [super init];
+@synthesize scrollView,containerViewArr,dotViewClass,dotViews,dotSize;
+
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
     if (self) {
-        frame = frame_;
+        [self _setUpScrollView];
     }
     return self;
 }
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
-    self.view.frame = frame;
-    [self _setUpScrollView];
-    [self _setUpDotView];
-}
-
 - (void)_setUpScrollView{
-    scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+    scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     scrollView.delegate = self;
     scrollView.pagingEnabled = YES;
     scrollView.bounces = NO;
-    [self.view addSubview:scrollView];
+    [self addSubview:scrollView];
     
+}
+
+- (void)setContainerViewArr:(NSArray<UIView *> *)arr{
+    containerViewArr = arr;
+    [self _updateScrollView];
+}
+- (void)_updateScrollView{
     if (containerViewArr) {
-        scrollView.contentSize = CGSizeMake(frame.size.width*containerViewArr.count, frame.size.height);
+        scrollView.contentSize = CGSizeMake(self.frame.size.width*containerViewArr.count, self.frame.size.height);
         int i = 0;
         for (UIView *view in containerViewArr) {
-            view.frame = CGRectMake(i*frame.size.width, 0, frame.size.width, frame.size.height);
+            view.frame = CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height);
             [scrollView addSubview:view];
             i++;
         }
     }
+    [self _setUpDotView];
 }
 - (void)_setUpDotView{
     if (dotViewClass) {
@@ -128,16 +127,18 @@ const float kDotViewSpacing = 8;
     }else{
         dotArr = [NSMutableArray array];
         float dotViewWidth = (dotSize.width+kDotViewSpacing)*containerViewArr.count-kDotViewSpacing;
-        float startPointX = (frame.size.width-dotViewWidth)/2;
+        float startPointX = (self.frame.size.width-dotViewWidth)/2;
         for (int i=0; i<containerViewArr.count; i++) {
-            KAnimatedDotView *dotView = [[KAnimatedDotView alloc] initWithFrame:CGRectMake(startPointX+(dotSize.width+kDotViewSpacing)*i, frame.size.height-dotSize.height-5, dotSize.width, dotSize.height)];
+            KAnimatedDotView *dotView = [[KAnimatedDotView alloc] initWithFrame:CGRectMake(startPointX+(dotSize.width+kDotViewSpacing)*i, self.frame.size.height-dotSize.height-5, dotSize.width, dotSize.height)];
             [dotArr addObject:dotView];
-            [self.view addSubview:dotView];
+            [self addSubview:dotView];
         }
         
     }
-    currentPageIndex = 0;
-    [self updateDotAtIndex:currentPageIndex withState:YES];
+    if (dotArr&&dotArr.count>0) {
+        currentPageIndex = 0;
+        [self updateDotAtIndex:currentPageIndex withState:YES];
+    }
 }
 - (void)updateDotAtIndex:(NSInteger)index withState:(BOOL)state{
     KAnimatedDotView *dotView = (KAnimatedDotView*)dotArr[index];
@@ -155,9 +156,4 @@ const float kDotViewSpacing = 8;
         [self updateDotAtIndex:currentPageIndex withState:YES];
     }
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
