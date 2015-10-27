@@ -11,5 +11,6 @@
 @interface MainVC : UIViewController
 @property (strong, nonatomic) UINavigationBar *navigationBar;
 @property (weak, nonatomic) IBOutlet UIView *galleryView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

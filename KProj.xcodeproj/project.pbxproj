@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1F53C71BDF2C89002AC50D /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1F53C51BDF25E4002AC50D /* pop.framework */; };
+		BB1F53C81BDF2C89002AC50D /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB1F53C51BDF25E4002AC50D /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB1F53CC1BDF817B002AC50D /* KCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1F53CB1BDF817B002AC50D /* KCollectionLayout.m */; settings = {ASSET_TAGS = (); }; };
 		BBEB4A031BD4D91E0014E447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A021BD4D91E0014E447 /* main.m */; };
 		BBEB4A061BD4D91E0014E447 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A051BD4D91E0014E447 /* AppDelegate.m */; };
 		BBEB4A0F1BD4D91E0014E447 /* KProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A0D1BD4D91E0014E447 /* KProj.xcdatamodeld */; };
@@ -28,11 +31,28 @@
 		BBEB4A5B1BD886CD0014E447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEB4A5A1BD886CD0014E447 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		BBEB4A5E1BD8953E0014E447 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A5D1BD8953E0014E447 /* MainVC.m */; settings = {ASSET_TAGS = (); }; };
 		BBEB4A611BD8BE5A0014E447 /* KScrolView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A601BD8BE5A0014E447 /* KScrolView.m */; settings = {ASSET_TAGS = (); }; };
-		BBEB4A661BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A631BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.m */; settings = {ASSET_TAGS = (); }; };
-		BBEB4A671BD8E9D10014E447 /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A651BD8E9D10014E447 /* RACollectionViewTripletLayout.m */; settings = {ASSET_TAGS = (); }; };
+		BBEB4A751BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A721BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.m */; settings = {ASSET_TAGS = (); }; };
+		BBEB4A761BD9E5520014E447 /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB4A741BD9E5520014E447 /* RACollectionViewTripletLayout.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BB1F53C91BDF2C8A002AC50D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB1F53C81BDF2C89002AC50D /* pop.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BB1F53C51BDF25E4002AC50D /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
+		BB1F53CA1BDF817B002AC50D /* KCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCollectionLayout.h; sourceTree = "<group>"; };
+		BB1F53CB1BDF817B002AC50D /* KCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCollectionLayout.m; sourceTree = "<group>"; };
 		BBEB49FE1BD4D91E0014E447 /* KProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEB4A021BD4D91E0014E447 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBEB4A041BD4D91E0014E447 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,10 +80,10 @@
 		BBEB4A5D1BD8953E0014E447 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		BBEB4A5F1BD8BE5A0014E447 /* KScrolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScrolView.h; sourceTree = "<group>"; };
 		BBEB4A601BD8BE5A0014E447 /* KScrolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KScrolView.m; sourceTree = "<group>"; };
-		BBEB4A621BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACollectionViewReorderableTripletLayout.h; path = ../../MiBeacon/RACollectionViewReorderableTripletLayout/RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
-		BBEB4A631BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACollectionViewReorderableTripletLayout.m; path = ../../MiBeacon/RACollectionViewReorderableTripletLayout/RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
-		BBEB4A641BD8E9D10014E447 /* RACollectionViewTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACollectionViewTripletLayout.h; path = ../../MiBeacon/RACollectionViewReorderableTripletLayout/RACollectionViewTripletLayout.h; sourceTree = "<group>"; };
-		BBEB4A651BD8E9D10014E447 /* RACollectionViewTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACollectionViewTripletLayout.m; path = ../../MiBeacon/RACollectionViewReorderableTripletLayout/RACollectionViewTripletLayout.m; sourceTree = "<group>"; };
+		BBEB4A711BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
+		BBEB4A721BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
+		BBEB4A731BD9E5520014E447 /* RACollectionViewTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewTripletLayout.h; sourceTree = "<group>"; };
+		BBEB4A741BD9E5520014E447 /* RACollectionViewTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewTripletLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +91,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1F53C71BDF2C89002AC50D /* pop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1F53C41BDF25E4002AC50D /* 3rdFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1F53C51BDF25E4002AC50D /* pop.framework */,
+			);
+			path = 3rdFrameworks;
+			sourceTree = "<group>";
+		};
 		BBEB49F51BD4D91E0014E447 = {
 			isa = PBXGroup;
 			children = (
+				BB1F53C41BDF25E4002AC50D /* 3rdFrameworks */,
 				BBEB4A221BD4F20D0014E447 /* Resource */,
 				BBEB4A1D1BD4E7050014E447 /* Views */,
 				BBEB4A001BD4D91E0014E447 /* KProj */,
@@ -152,12 +182,14 @@
 		BBEB4A391BD74C010014E447 /* objects */ = {
 			isa = PBXGroup;
 			children = (
-				BBEB4A621BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.h */,
-				BBEB4A631BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.m */,
-				BBEB4A641BD8E9D10014E447 /* RACollectionViewTripletLayout.h */,
-				BBEB4A651BD8E9D10014E447 /* RACollectionViewTripletLayout.m */,
+				BBEB4A711BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.h */,
+				BBEB4A721BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.m */,
+				BBEB4A731BD9E5520014E447 /* RACollectionViewTripletLayout.h */,
+				BBEB4A741BD9E5520014E447 /* RACollectionViewTripletLayout.m */,
 				BBEB4A5F1BD8BE5A0014E447 /* KScrolView.h */,
 				BBEB4A601BD8BE5A0014E447 /* KScrolView.m */,
+				BB1F53CA1BDF817B002AC50D /* KCollectionLayout.h */,
+				BB1F53CB1BDF817B002AC50D /* KCollectionLayout.m */,
 			);
 			name = objects;
 			sourceTree = "<group>";
@@ -172,6 +204,7 @@
 				BBEB49FA1BD4D91E0014E447 /* Sources */,
 				BBEB49FB1BD4D91E0014E447 /* Frameworks */,
 				BBEB49FC1BD4D91E0014E447 /* Resources */,
+				BB1F53C91BDF2C8A002AC50D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,11 +280,12 @@
 			files = (
 				BBEB4A5E1BD8953E0014E447 /* MainVC.m in Sources */,
 				BBEB4A0F1BD4D91E0014E447 /* KProj.xcdatamodeld in Sources */,
-				BBEB4A661BD8E9D10014E447 /* RACollectionViewReorderableTripletLayout.m in Sources */,
 				BBEB4A061BD4D91E0014E447 /* AppDelegate.m in Sources */,
+				BB1F53CC1BDF817B002AC50D /* KCollectionLayout.m in Sources */,
 				BBEB4A611BD8BE5A0014E447 /* KScrolView.m in Sources */,
-				BBEB4A671BD8E9D10014E447 /* RACollectionViewTripletLayout.m in Sources */,
 				BBEB4A031BD4D91E0014E447 /* main.m in Sources */,
+				BBEB4A761BD9E5520014E447 /* RACollectionViewTripletLayout.m in Sources */,
+				BBEB4A751BD9E5520014E447 /* RACollectionViewReorderableTripletLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,9 +386,14 @@
 		BBEB4A191BD4D91E0014E447 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rdFrameworks",
+				);
 				GCC_PREFIX_HEADER = KProj/KProj.pch;
 				INFOPLIST_FILE = KProj/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silverup.KProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,9 +403,14 @@
 		BBEB4A1A1BD4D91E0014E447 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rdFrameworks",
+				);
 				GCC_PREFIX_HEADER = KProj/KProj.pch;
 				INFOPLIST_FILE = KProj/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silverup.KProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
