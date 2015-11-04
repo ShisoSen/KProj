@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBB53C1C1BE9CC01003BAE0B /* KARootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C1B1BE9CC01003BAE0B /* KARootVC.m */; };
+		BBB53C1F1BE9CFE8003BAE0B /* KAViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C1E1BE9CFE8003BAE0B /* KAViewBuilder.m */; };
+		BBB53C221BE9D1AB003BAE0B /* KARootMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C211BE9D1AB003BAE0B /* KARootMainView.m */; };
+		BBB53C251BE9D1C5003BAE0B /* KAWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C241BE9D1C5003BAE0B /* KAWeatherView.m */; };
+		BBB53C281BE9D207003BAE0B /* KAEmotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C271BE9D207003BAE0B /* KAEmotionView.m */; };
+		BBDC39D21BE99EC70026A1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39D11BE99EC70026A1F3 /* main.m */; };
+		BBDC39D51BE99EC70026A1F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39D41BE99EC70026A1F3 /* AppDelegate.m */; };
+		BBDC39DE1BE99EC70026A1F3 /* KAProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39DC1BE99EC70026A1F3 /* KAProj.xcdatamodeld */; };
+		BBDC39E01BE99EC70026A1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDC39DF1BE99EC70026A1F3 /* Assets.xcassets */; };
+		BBDC39E31BE99EC70026A1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDC39E11BE99EC70026A1F3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBB53C1A1BE9CC01003BAE0B /* KARootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KARootVC.h; sourceTree = "<group>"; };
+		BBB53C1B1BE9CC01003BAE0B /* KARootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KARootVC.m; sourceTree = "<group>"; };
+		BBB53C1D1BE9CFE8003BAE0B /* KAViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAViewBuilder.h; sourceTree = "<group>"; };
+		BBB53C1E1BE9CFE8003BAE0B /* KAViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAViewBuilder.m; sourceTree = "<group>"; };
+		BBB53C201BE9D1AB003BAE0B /* KARootMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KARootMainView.h; sourceTree = "<group>"; };
+		BBB53C211BE9D1AB003BAE0B /* KARootMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KARootMainView.m; sourceTree = "<group>"; };
+		BBB53C231BE9D1C5003BAE0B /* KAWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAWeatherView.h; sourceTree = "<group>"; };
+		BBB53C241BE9D1C5003BAE0B /* KAWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAWeatherView.m; sourceTree = "<group>"; };
+		BBB53C261BE9D207003BAE0B /* KAEmotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAEmotionView.h; sourceTree = "<group>"; };
+		BBB53C271BE9D207003BAE0B /* KAEmotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAEmotionView.m; sourceTree = "<group>"; };
+		BBDC39CD1BE99EC70026A1F3 /* KAProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDC39D11BE99EC70026A1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBDC39D31BE99EC70026A1F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBDC39D41BE99EC70026A1F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBDC39DD1BE99EC70026A1F3 /* KAProj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KAProj.xcdatamodel; sourceTree = "<group>"; };
+		BBDC39DF1BE99EC70026A1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBDC39E21BE99EC70026A1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBDC39E41BE99EC70026A1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBDC39CA1BE99EC70026A1F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBB53C161BE9CB72003BAE0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBB53C201BE9D1AB003BAE0B /* KARootMainView.h */,
+				BBB53C211BE9D1AB003BAE0B /* KARootMainView.m */,
+				BBB53C231BE9D1C5003BAE0B /* KAWeatherView.h */,
+				BBB53C241BE9D1C5003BAE0B /* KAWeatherView.m */,
+				BBB53C261BE9D207003BAE0B /* KAEmotionView.h */,
+				BBB53C271BE9D207003BAE0B /* KAEmotionView.m */,
+			);
+			path = View;
+			sourceTree = SOURCE_ROOT;
+		};
+		BBB53C171BE9CB72003BAE0B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				BBB53C1D1BE9CFE8003BAE0B /* KAViewBuilder.h */,
+				BBB53C1E1BE9CFE8003BAE0B /* KAViewBuilder.m */,
+			);
+			name = Builder;
+			path = ViewBuilder;
+			sourceTree = SOURCE_ROOT;
+		};
+		BBB53C181BE9CB72003BAE0B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BBB53C1A1BE9CC01003BAE0B /* KARootVC.h */,
+				BBB53C1B1BE9CC01003BAE0B /* KARootVC.m */,
+			);
+			path = ViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		BBB53C191BE9CB72003BAE0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		BBDC39C41BE99EC70026A1F3 = {
+			isa = PBXGroup;
+			children = (
+				BBDC39CF1BE99EC70026A1F3 /* KAProj */,
+				BBDC39CE1BE99EC70026A1F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBDC39CE1BE99EC70026A1F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC39CD1BE99EC70026A1F3 /* KAProj.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBDC39CF1BE99EC70026A1F3 /* KAProj */ = {
+			isa = PBXGroup;
+			children = (
+				BBB53C161BE9CB72003BAE0B /* View */,
+				BBB53C191BE9CB72003BAE0B /* ViewModel */,
+				BBB53C171BE9CB72003BAE0B /* Builder */,
+				BBB53C181BE9CB72003BAE0B /* ViewController */,
+				BBDC39D31BE99EC70026A1F3 /* AppDelegate.h */,
+				BBDC39D41BE99EC70026A1F3 /* AppDelegate.m */,
+				BBDC39DF1BE99EC70026A1F3 /* Assets.xcassets */,
+				BBDC39E11BE99EC70026A1F3 /* LaunchScreen.storyboard */,
+				BBDC39E41BE99EC70026A1F3 /* Info.plist */,
+				BBDC39DC1BE99EC70026A1F3 /* KAProj.xcdatamodeld */,
+				BBDC39D01BE99EC70026A1F3 /* Supporting Files */,
+			);
+			path = KAProj;
+			sourceTree = "<group>";
+		};
+		BBDC39D01BE99EC70026A1F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC39D11BE99EC70026A1F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBDC39CC1BE99EC70026A1F3 /* KAProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBDC39E71BE99EC70026A1F3 /* Build configuration list for PBXNativeTarget "KAProj" */;
+			buildPhases = (
+				BBDC39C91BE99EC70026A1F3 /* Sources */,
+				BBDC39CA1BE99EC70026A1F3 /* Frameworks */,
+				BBDC39CB1BE99EC70026A1F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAProj;
+			productName = KAProj;
+			productReference = BBDC39CD1BE99EC70026A1F3 /* KAProj.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBDC39C51BE99EC70026A1F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = silverup.co;
+				TargetAttributes = {
+					BBDC39CC1BE99EC70026A1F3 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = BBDC39C81BE99EC70026A1F3 /* Build configuration list for PBXProject "KAProj" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBDC39C41BE99EC70026A1F3;
+			productRefGroup = BBDC39CE1BE99EC70026A1F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBDC39CC1BE99EC70026A1F3 /* KAProj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBDC39CB1BE99EC70026A1F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDC39E31BE99EC70026A1F3 /* LaunchScreen.storyboard in Resources */,
+				BBDC39E01BE99EC70026A1F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBDC39C91BE99EC70026A1F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDC39D51BE99EC70026A1F3 /* AppDelegate.m in Sources */,
+				BBB53C1F1BE9CFE8003BAE0B /* KAViewBuilder.m in Sources */,
+				BBDC39DE1BE99EC70026A1F3 /* KAProj.xcdatamodeld in Sources */,
+				BBB53C251BE9D1C5003BAE0B /* KAWeatherView.m in Sources */,
+				BBB53C281BE9D207003BAE0B /* KAEmotionView.m in Sources */,
+				BBB53C221BE9D1AB003BAE0B /* KARootMainView.m in Sources */,
+				BBB53C1C1BE9CC01003BAE0B /* KARootVC.m in Sources */,
+				BBDC39D21BE99EC70026A1F3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBDC39E11BE99EC70026A1F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBDC39E21BE99EC70026A1F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBDC39E51BE99EC70026A1F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBDC39E61BE99EC70026A1F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBDC39E81BE99EC70026A1F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAProj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverup.KAProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBDC39E91BE99EC70026A1F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				INFOPLIST_FILE = KAProj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverup.KAProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBDC39C81BE99EC70026A1F3 /* Build configuration list for PBXProject "KAProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBDC39E51BE99EC70026A1F3 /* Debug */,
+				BBDC39E61BE99EC70026A1F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBDC39E71BE99EC70026A1F3 /* Build configuration list for PBXNativeTarget "KAProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBDC39E81BE99EC70026A1F3 /* Debug */,
+				BBDC39E91BE99EC70026A1F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BBDC39DC1BE99EC70026A1F3 /* KAProj.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BBDC39DD1BE99EC70026A1F3 /* KAProj.xcdatamodel */,
+			);
+			currentVersion = BBDC39DD1BE99EC70026A1F3 /* KAProj.xcdatamodel */;
+			path = KAProj.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BBDC39C51BE99EC70026A1F3 /* Project object */;
+}
