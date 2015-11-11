@@ -64,7 +64,7 @@ static const int kThreshold = 5;
         CGFloat x = point.point.x - old.point.x;
         CGFloat y = point.point.y - old.point.y;
         if (y!=0) {
-            CGFloat tan = x/y;
+            CGFloat tan = y/x;
             if (index<101) {
                 tanArr[index] = tan;
                 index++;

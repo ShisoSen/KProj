@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "KARootVC.h"
 
+#import "KATimeTableVCViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,7 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    KARootVC *rootVC = [[KARootVC alloc] initWithNibName:nil bundle:nil];
+//    KARootVC *rootVC = [[KARootVC alloc] initWithNibName:nil bundle:nil];
+    KATimeTableVCViewController *rootVC = [[KATimeTableVCViewController alloc] initWithNibName:nil bundle:nil];
     rootVC.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];

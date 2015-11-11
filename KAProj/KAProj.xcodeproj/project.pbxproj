@@ -12,6 +12,11 @@
 		BBB53C221BE9D1AB003BAE0B /* KARootMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C211BE9D1AB003BAE0B /* KARootMainView.m */; };
 		BBB53C251BE9D1C5003BAE0B /* KAWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C241BE9D1C5003BAE0B /* KAWeatherView.m */; };
 		BBB53C281BE9D207003BAE0B /* KAEmotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB53C271BE9D207003BAE0B /* KAEmotionView.m */; };
+		BBC2888F1BF1DACF00C301BB /* KATimeTableVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC2888E1BF1DACF00C301BB /* KATimeTableVCViewController.m */; };
+		BBC288991BF2EC5000C301BB /* KATimeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC288971BF2EC5000C301BB /* KATimeTableCell.m */; };
+		BBC2889D1BF2F89100C301BB /* KAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC2889C1BF2F89100C301BB /* KAUtility.m */; };
+		BBC288A51BF3376600C301BB /* KAUnitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC288A41BF3376600C301BB /* KAUnitCell.m */; };
+		BBC288A81BF3536200C301BB /* weather_rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC288A71BF3536200C301BB /* weather_rain.png */; };
 		BBDC39D21BE99EC70026A1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39D11BE99EC70026A1F3 /* main.m */; };
 		BBDC39D51BE99EC70026A1F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39D41BE99EC70026A1F3 /* AppDelegate.m */; };
 		BBDC39DE1BE99EC70026A1F3 /* KAProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39DC1BE99EC70026A1F3 /* KAProj.xcdatamodeld */; };
@@ -30,6 +35,15 @@
 		BBB53C241BE9D1C5003BAE0B /* KAWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAWeatherView.m; sourceTree = "<group>"; };
 		BBB53C261BE9D207003BAE0B /* KAEmotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAEmotionView.h; sourceTree = "<group>"; };
 		BBB53C271BE9D207003BAE0B /* KAEmotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAEmotionView.m; sourceTree = "<group>"; };
+		BBC2888D1BF1DACF00C301BB /* KATimeTableVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATimeTableVCViewController.h; sourceTree = "<group>"; };
+		BBC2888E1BF1DACF00C301BB /* KATimeTableVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATimeTableVCViewController.m; sourceTree = "<group>"; };
+		BBC288961BF2EC5000C301BB /* KATimeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATimeTableCell.h; sourceTree = "<group>"; };
+		BBC288971BF2EC5000C301BB /* KATimeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATimeTableCell.m; sourceTree = "<group>"; };
+		BBC2889B1BF2F89100C301BB /* KAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAUtility.h; sourceTree = "<group>"; };
+		BBC2889C1BF2F89100C301BB /* KAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAUtility.m; sourceTree = "<group>"; };
+		BBC288A31BF3376600C301BB /* KAUnitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAUnitCell.h; sourceTree = "<group>"; };
+		BBC288A41BF3376600C301BB /* KAUnitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAUnitCell.m; sourceTree = "<group>"; };
+		BBC288A71BF3536200C301BB /* weather_rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_rain.png; sourceTree = "<group>"; };
 		BBDC39CD1BE99EC70026A1F3 /* KAProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDC39D11BE99EC70026A1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBDC39D31BE99EC70026A1F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +68,7 @@
 		BBB53C161BE9CB72003BAE0B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BBC288871BF1CF0300C301BB /* TimeTable */,
 				BBB53C201BE9D1AB003BAE0B /* KARootMainView.h */,
 				BBB53C211BE9D1AB003BAE0B /* KARootMainView.m */,
 				BBB53C231BE9D1C5003BAE0B /* KAWeatherView.h */,
@@ -69,6 +84,8 @@
 			children = (
 				BBB53C1D1BE9CFE8003BAE0B /* KAViewBuilder.h */,
 				BBB53C1E1BE9CFE8003BAE0B /* KAViewBuilder.m */,
+				BBC2889B1BF2F89100C301BB /* KAUtility.h */,
+				BBC2889C1BF2F89100C301BB /* KAUtility.m */,
 			);
 			name = Builder;
 			path = ViewBuilder;
@@ -90,6 +107,34 @@
 			path = ViewModel;
 			sourceTree = SOURCE_ROOT;
 		};
+		BBC288871BF1CF0300C301BB /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				BBC2888D1BF1DACF00C301BB /* KATimeTableVCViewController.h */,
+				BBC2888E1BF1DACF00C301BB /* KATimeTableVCViewController.m */,
+				BBC288961BF2EC5000C301BB /* KATimeTableCell.h */,
+				BBC288971BF2EC5000C301BB /* KATimeTableCell.m */,
+			);
+			name = TimeTable;
+			sourceTree = "<group>";
+		};
+		BBC288A21BF3369500C301BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBC288A31BF3376600C301BB /* KAUnitCell.h */,
+				BBC288A41BF3376600C301BB /* KAUnitCell.m */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		BBC288A61BF3536200C301BB /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				BBC288A71BF3536200C301BB /* weather_rain.png */,
+			);
+			path = resource;
+			sourceTree = SOURCE_ROOT;
+		};
 		BBDC39C41BE99EC70026A1F3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +154,8 @@
 		BBDC39CF1BE99EC70026A1F3 /* KAProj */ = {
 			isa = PBXGroup;
 			children = (
+				BBC288A61BF3536200C301BB /* resource */,
+				BBC288A21BF3369500C301BB /* Model */,
 				BBB53C161BE9CB72003BAE0B /* View */,
 				BBB53C191BE9CB72003BAE0B /* ViewModel */,
 				BBB53C171BE9CB72003BAE0B /* Builder */,
@@ -191,6 +238,7 @@
 			files = (
 				BBDC39E31BE99EC70026A1F3 /* LaunchScreen.storyboard in Resources */,
 				BBDC39E01BE99EC70026A1F3 /* Assets.xcassets in Resources */,
+				BBC288A81BF3536200C301BB /* weather_rain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,11 +250,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDC39D51BE99EC70026A1F3 /* AppDelegate.m in Sources */,
+				BBC288991BF2EC5000C301BB /* KATimeTableCell.m in Sources */,
+				BBC2888F1BF1DACF00C301BB /* KATimeTableVCViewController.m in Sources */,
 				BBB53C1F1BE9CFE8003BAE0B /* KAViewBuilder.m in Sources */,
 				BBDC39DE1BE99EC70026A1F3 /* KAProj.xcdatamodeld in Sources */,
 				BBB53C251BE9D1C5003BAE0B /* KAWeatherView.m in Sources */,
 				BBB53C281BE9D207003BAE0B /* KAEmotionView.m in Sources */,
+				BBC288A51BF3376600C301BB /* KAUnitCell.m in Sources */,
 				BBB53C221BE9D1AB003BAE0B /* KARootMainView.m in Sources */,
+				BBC2889D1BF2F89100C301BB /* KAUtility.m in Sources */,
 				BBB53C1C1BE9CC01003BAE0B /* KARootVC.m in Sources */,
 				BBDC39D21BE99EC70026A1F3 /* main.m in Sources */,
 			);
