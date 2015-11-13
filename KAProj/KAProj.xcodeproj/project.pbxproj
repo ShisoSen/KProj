@@ -17,6 +17,8 @@
 		BBC2889D1BF2F89100C301BB /* KAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC2889C1BF2F89100C301BB /* KAUtility.m */; };
 		BBC288A51BF3376600C301BB /* KAUnitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC288A41BF3376600C301BB /* KAUnitCell.m */; };
 		BBC288A81BF3536200C301BB /* weather_rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC288A71BF3536200C301BB /* weather_rain.png */; };
+		BBC288AC1BF46FC900C301BB /* KATimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC288AB1BF46FC900C301BB /* KATimeLineViewController.m */; };
+		BBC288AF1BF485C200C301BB /* KATimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC288AE1BF485C200C301BB /* KATimeLineView.m */; };
 		BBDC39D21BE99EC70026A1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39D11BE99EC70026A1F3 /* main.m */; };
 		BBDC39D51BE99EC70026A1F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39D41BE99EC70026A1F3 /* AppDelegate.m */; };
 		BBDC39DE1BE99EC70026A1F3 /* KAProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBDC39DC1BE99EC70026A1F3 /* KAProj.xcdatamodeld */; };
@@ -44,6 +46,10 @@
 		BBC288A31BF3376600C301BB /* KAUnitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAUnitCell.h; sourceTree = "<group>"; };
 		BBC288A41BF3376600C301BB /* KAUnitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAUnitCell.m; sourceTree = "<group>"; };
 		BBC288A71BF3536200C301BB /* weather_rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_rain.png; sourceTree = "<group>"; };
+		BBC288AA1BF46FC900C301BB /* KATimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATimeLineViewController.h; sourceTree = "<group>"; };
+		BBC288AB1BF46FC900C301BB /* KATimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATimeLineViewController.m; sourceTree = "<group>"; };
+		BBC288AD1BF485C200C301BB /* KATimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATimeLineView.h; sourceTree = "<group>"; };
+		BBC288AE1BF485C200C301BB /* KATimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATimeLineView.m; sourceTree = "<group>"; };
 		BBDC39CD1BE99EC70026A1F3 /* KAProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDC39D11BE99EC70026A1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBDC39D31BE99EC70026A1F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		BBB53C161BE9CB72003BAE0B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BBC288A91BF4697300C301BB /* TimeLine */,
 				BBC288871BF1CF0300C301BB /* TimeTable */,
 				BBB53C201BE9D1AB003BAE0B /* KARootMainView.h */,
 				BBB53C211BE9D1AB003BAE0B /* KARootMainView.m */,
@@ -134,6 +141,17 @@
 			);
 			path = resource;
 			sourceTree = SOURCE_ROOT;
+		};
+		BBC288A91BF4697300C301BB /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				BBC288AA1BF46FC900C301BB /* KATimeLineViewController.h */,
+				BBC288AB1BF46FC900C301BB /* KATimeLineViewController.m */,
+				BBC288AD1BF485C200C301BB /* KATimeLineView.h */,
+				BBC288AE1BF485C200C301BB /* KATimeLineView.m */,
+			);
+			name = TimeLine;
+			sourceTree = "<group>";
 		};
 		BBDC39C41BE99EC70026A1F3 = {
 			isa = PBXGroup;
@@ -258,9 +276,11 @@
 				BBB53C281BE9D207003BAE0B /* KAEmotionView.m in Sources */,
 				BBC288A51BF3376600C301BB /* KAUnitCell.m in Sources */,
 				BBB53C221BE9D1AB003BAE0B /* KARootMainView.m in Sources */,
+				BBC288AF1BF485C200C301BB /* KATimeLineView.m in Sources */,
 				BBC2889D1BF2F89100C301BB /* KAUtility.m in Sources */,
 				BBB53C1C1BE9CC01003BAE0B /* KARootVC.m in Sources */,
 				BBDC39D21BE99EC70026A1F3 /* main.m in Sources */,
+				BBC288AC1BF46FC900C301BB /* KATimeLineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
